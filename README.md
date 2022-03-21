@@ -1,12 +1,27 @@
-# Sentiment-Analysis-on-Movie-Reviews
+# Sentiment Analysis on Movie Reviews
+Sentiment analysis of a movie review can rate how positive or negative a movie review is and hence the overall rating for a movie.
 
-Reference = https://towardsdatascience.com/imdb-reviews-or-8143fe57c825
+## Working Principle
+First we will clean the data. Then we will represent our data as a collection of words or tokens. After that breaking the documents down into term frequencies, then transforming them into TD-IDF value. With X and y as our feature matrices of TD-IDF values and target vector of sentiment values respectively, we are ready to split our dataset into training and test sets. Then, we will fit our training set into a Logistic Regression model. Finally, we will be passing our test data to predict the output
 
+## APPROACH
+-Cleaned and preprocessed the data.
 
-Google Colab Link = 
-1. Sentiment_Analysis_on_Movie_Reviews_(_Using_TF_IDF) = Score = 0.89
-  https://colab.research.google.com/drive/1-LGvSiI1n3PYrnB6TUyBN8iRaekFZ_4b?usp=sharing
-2. natural_language_processing = Score = 0.82
-  https://colab.research.google.com/drive/1d0jYywvKj8KhpPOid8hWVNEXey048W_n
+-Perform feature extraction using methods such as Count Vectorization, term frequencies, and inverse document frequencies, natural language toolkit.
 
-Dataset Link = https://www.kaggle.com/lakshmi25npathi/imdb-dataset-of-50k-movie-reviews
+-Built and employed a Logistics Regression model using scikit-learn.
+
+-Model evaluation using Javan’s Accuracy Score and Confusion Matrix.
+
+## Packages Used
+1. nltk
+2. sklearn
+3. re
+4. CountVectorizer
+5. TfidfTransformer
+6. LogisticRegressionCV
+7. numpy 
+8. pandas
+
+## OS used
+Windows 10
